@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "766f543a-eb13-45ca-8117-204598f74375",
+		"name": "Continuada 1 sprint 1.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get instrumentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "esse metodo faz requisição dos instrumentos da loja"
+			},
+			"response": []
+		},
+		{
+			"name": "get instrumento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "esse metodo faz requisição dos instrumentos da loja"
+			},
+			"response": []
+		},
+		{
+			"name": "Criação de instrumento Guitarra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"bateria\",\n    \"categoria\": \"percurssão\",\n    \"marca\": \"yamaha\",\n    \"preco\": 9000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criação de instrumento Bateria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"bateria\",\n    \"categoria\": \"percurssão\",\n    \"marca\": \"yamaha\",\n    \"preco\": 9000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta instrumentos populares e acessiveis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleta um instruemento da lista",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/instrumentos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"instrumentos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

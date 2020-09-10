@@ -18,12 +18,12 @@ public abstract class Instrumento {
 
     @Override
     public String toString() {
-        return "Instrumento{" +
-                "nome='" + nome + '\'' +
-                ", categoria='" + categoria + '\'' +
-                ", marca='" + marca + '\'' +
-                ", preco=" + preco +
-                '}';
+        return
+                "nome: " + nome +
+                "\ncategoria: " + categoria +
+                "\nmarca: " + marca +
+                "\npreço: " + preco +
+                "\npreco para venda: " + lucroInstrumento();
     }
 
     public String getNome() {
@@ -41,4 +41,5 @@ public abstract class Instrumento {
     public Double getPreco() {
         return preco;
     }
+
 }

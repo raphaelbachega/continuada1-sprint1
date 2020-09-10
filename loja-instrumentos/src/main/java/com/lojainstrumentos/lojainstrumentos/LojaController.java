@@ -26,8 +26,12 @@ public class LojaController {
 
     @GetMapping("/{id}")
     public ResponseEntity verificarInstrumento(@PathVariable int id){
+//        Double total = 0.0;
+//        for (Instrumento i: lista){
+//           total =  i.lucroInstrumento();
+//        }
         if (lista.size() >= id){
-            return ResponseEntity.ok(lista.get(id-1));
+            return ResponseEntity.ok(lista.get(id-1).toString());
         }
         else{
             return ResponseEntity.notFound().build();
@@ -67,6 +71,8 @@ public class LojaController {
         else{
             return ResponseEntity.ok(instrumentosPopulares);
         }
+
+
     }
 
 

@@ -13,6 +13,6 @@ public class Guitarra extends Instrumento {
 
     @Override
     public String toString() {
-        return "Guitarra{} " + super.toString() + lucroInstrumento();
+        return "Guitarra\n" + super.toString();
     }
 }
